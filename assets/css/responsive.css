@@ -398,7 +398,7 @@
   .testimonial-icon {
     display: none;
   }
-  .newsletter-area {
+  .newsletter-area, .quick-contact-area {
     padding: 30px 15px;
     margin-bottom: 35px;
   }
