@@ -36,7 +36,7 @@
 
 .mean-container a.meanmenu-reveal span {
     display: block;
-    background: #fff;
+    background: var(--secondary-color) !important;
     position: relative;
     height: 4px;
     margin-top: -5px;
@@ -336,7 +336,8 @@
     }
 
     .mean-container .mean-bar {
-        background-color: #2d3652;
+        /* background-color: #2d3652; */
+        background-color: #fff;
         padding: 0;
     }
 
