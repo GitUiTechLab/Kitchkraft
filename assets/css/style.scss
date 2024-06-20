@@ -111,6 +111,12 @@ img {
 .pb-70 {
     padding-bottom: 70px;
 }
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
 .pt-45 {
     padding-top: 45px;
 }
@@ -892,7 +898,6 @@ About Area
 }
 .about-content {
     margin-left: 40px;
-    margin-top: 187px;
     margin-bottom: 30px;
     span {
         color: $main-color;
@@ -905,6 +910,7 @@ About Area
     }
     p {
         max-width: 680px;
+        text-align: justify;
     }
     .about-btn {
         margin-top: 25px;
@@ -977,6 +983,9 @@ About Area
 .about-img-2 {
     margin-bottom: 30px;
 }
+.about-img-2 .h-640{
+    height: 640px;
+  }
 /*=================================
 About Area End
 ====================================*/
@@ -1608,7 +1617,6 @@ Footer Area End
 }
 
 .footer-top-list {
-    max-width: 760px;
     margin: 0 auto;
 }
 .footer-list {
@@ -2236,41 +2244,23 @@ Inner Banner
         }
     }
 }
-.inner-bg1 {
-    background-image: url(../img/inner-banner/1.jpg);
+.inner-bg-about {
+    background-image: url(../img/inner-banner/about-banner.jpg);
 }
-.inner-bg2 {
-    background-image: url(../img/inner-banner/2.jpg);
+.inner-bg-service {
+    background-image: url(../img/inner-banner/services-banner.jpg);
 }
-.inner-bg3 {
-    background-image: url(../img/inner-banner/3.jpg);
+.inner-bg-product {
+    background-image: url(../img/inner-banner/product-banner.jpg);
 }
-.inner-bg4 {
-    background-image: url(../img/inner-banner/4.jpg);
+.inner-bg-contact {
+    background-image: url(../img/inner-banner/contact-banner.jpg);
 }
-.inner-bg5 {
-    background-image: url(../img/inner-banner/5.jpg);
+.inner-bg-gallery{
+    background-image: url(../img/inner-banner/about-banner.jpg);
 }
-.inner-bg6 {
-    background-image: url(../img/inner-banner/6.jpg);
-}
-.inner-bg7 {
-    background-image: url(../img/inner-banner/7.jpg);
-}
-.inner-bg8 {
-    background-image: url(../img/inner-banner/8.jpg);
-}
-.inner-bg9 {
-    background-image: url(../img/inner-banner/9.jpg);
-}
-.inner-bg10 {
-    background-image: url(../img/inner-banner/10.jpg);
-}
-.inner-bg11 {
-    background-image: url(../img/inner-banner/11.jpg);
-}
-.inner-bg12 {
-    background-image: url(../img/inner-banner/12.jpg);
+.inner-bg-blog{
+    background-image: url(../img/inner-banner/product-banner.jpg);
 }
 /*================================
 Inner Banner End

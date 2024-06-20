@@ -297,9 +297,6 @@
         jQuery(".preloader").fadeOut(500);
     });
 
-    // Switch Btn
-    $('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
-
 })(jQuery);
 
 // function to set a given theme/color-scheme
@@ -308,22 +305,21 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
 }
 
-// function to toggle between light and dark theme
-function toggleTheme() {
-    if (localStorage.getItem('pixis_theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
-        setTheme('theme-dark');
-    }
+// Gallery section
+
+const modal = document.getElementsByClassName('idMyModal');
+const img = document.getElementsByClassName('toZoom');
+const modalImg = document.getElementsByClassName('modal-content');
+for ( let i = 0; i < img.length; i++ ) {
+  img[i].onclick = function () {
+    modal[i].style.display = "block";
+    modalImg[i].src = this.src;
+  }
 }
 
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('pixis_theme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('theme-light');
-      document.getElementById('slider').checked = true;
-    }
-})();
+var span = document.getElementsByClassName("close");
+for ( let i = 0; i < span.length; i++ ) {
+  span[i].onclick = function() { 
+    modal[i].style.display = "none";
+  }
+}
