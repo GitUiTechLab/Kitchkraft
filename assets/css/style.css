@@ -2245,18 +2245,6 @@ Home Slider
   border: 1px solid var(--secondary-color) !important;
 }
 
-.bg-item1 {
-  background-image: url(../img/home/1.jpeg);
-}
-
-.bg-item2 {
-  background-image: url(../img/home/2.jpeg);
-}
-
-.bg-item3 {
-  background-image: url(../img/home/3.jpg);
-}
-
 /*=================================
 Home Slider End
 ====================================*/
