@@ -398,11 +398,15 @@
   .testimonial-icon {
     display: none;
   }
-  .newsletter-area, .quick-contact-area {
+  .quick-contact-area {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+  .newsletter-area{
     padding: 30px 15px;
     margin-bottom: 35px;
   }
-  .newsletter-area h2 {
+  .newsletter-area h2, .quick-contact-area h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
@@ -411,6 +415,10 @@
   }
   .newsletter-form .subscribe-btn {
     padding: 0 15px;
+  }
+  .quick-contact-area .submit-btn{
+    /* display: block; */
+    width: 100%;
   }
   /* Home Page Two End */
   /* Home Page Three */
@@ -1081,6 +1089,10 @@
   }
   .testimonial-img .testimonial-man img {
     max-width: 100%;
+  }
+  .quick-contact-area {
+    padding: 20px 15px;
+    margin: 10px;
   }
   .blog-card .blog-content a h3 {
     font-size: 20px;

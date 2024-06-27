@@ -141,6 +141,10 @@ img {
   padding-bottom: 25px;
 }
 
+.pt-50 {
+  padding-top: 50px;
+}
+
 .pt-45 {
   padding-top: 45px;
 }
@@ -410,6 +414,8 @@ Navbar Area
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
+  width: 50vw;
+  transform: translateX(-25%);
   border: none;
   padding: 0;
   border-radius: 0;
@@ -417,7 +423,7 @@ Navbar Area
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li {
-  border-bottom: 1px dotted rgba(240, 9, 105, 0.4);
+  border-bottom: 1px dotted var(--default-color);
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li:last-child {
@@ -1286,17 +1292,17 @@ Gallery Area
 }
 
 .gallery-card .modal {
-  display: none; 
+  display: none;
   justify-content: center;
-  z-index: 999; 
-  padding-top: 100px; 
+  z-index: 999;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100vh; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .gallery-card .modal .modal-content {
@@ -1306,14 +1312,19 @@ Gallery Area
   max-width: 600px;
 }
 
-.gallery-card .modal .modal-content {  
+.gallery-card .modal .modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform: scale(0.1)} 
-  to {transform: scale(1)}
+  from {
+    transform: scale(0.1)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 .gallery-card .modal .close {
@@ -1333,7 +1344,7 @@ Gallery Area
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .gallery-card .modal .modal-content {
     width: 90%;
   }
@@ -2300,7 +2311,7 @@ Choose Area
 .choose-card {
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
+  padding: 30px 10px;
   text-align: center;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -2355,6 +2366,19 @@ Choose Area
 /*=================================
 Choose Area End
 ====================================*/
+
+/*=================================
+Carousel Area
+====================================*/
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--secondary-color);
+}
+
+/*=================================
+Carousel Area End
+====================================*/
+
 /*=================================
 Testimonial Area Two 
 ====================================*/
@@ -2550,14 +2574,21 @@ newsletter Area & quick-contact-area
   color: red;
 }
 
+.quick-contact-area {
+  padding: 30px 0; 
+}
 .quick-contact-form .submit-btn {
+  display: inline-block;
+  text-align: center;
   background-color: var(--main-color);
   color: #fff;
-  height: 45px;
+  /* height: 45px; */
+  height: 100%;
   line-height: 45px;
-  padding: 0 30px;
-  border: 0;
+  margin: 0;
   border-radius: 5px;
+  border: none;
+  padding: 0 25px;
   font-size: 14px;
 }
 
@@ -4152,6 +4183,23 @@ Product Details Page
 ====================================*/
 .product-detls-image {
   margin-bottom: 30px;
+}
+
+.product-detls-image>img {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.product-detls-image-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-detls-image-small {
+  flex-basis: 22%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .product-desc h3 {
