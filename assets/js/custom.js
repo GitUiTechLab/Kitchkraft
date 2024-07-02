@@ -103,7 +103,7 @@
     $('.product-images-slider').owlCarousel({
         loop: true,
         margin: 30,
-        nav: true,
+        // nav: true,
         dots: false,
         autoplay: true,
         autoplayHoverPause: true,
@@ -112,11 +112,14 @@
             "<i class='bx bx-right-arrow-alt' ></i>"
         ],
         responsive: {
-            0: {
-                items: 2
+            0:{
+                items:2
+            },
+            700: {
+                items: 4
             },
             1000: {
-                items: 4
+                items: 6
             }
         }
     })
