@@ -1373,6 +1373,10 @@ Product Area
   z-index: 1;
 }
 
+.product-area .nice-select{
+  background: none !important;
+  font-size: 16px !important;
+}
 .product-card {
   border-radius: 25px 25px 0 0;
   background-color: #fff;
